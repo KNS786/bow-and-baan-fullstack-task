@@ -1,0 +1,7 @@
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.csproj.AssemblyReference.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.AssemblyInfoInputs.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.AssemblyInfo.cs
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.csproj.CoreCompileInputs.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.MvcApplicationPartsAssemblyInfo.cs
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net6.0/backend.MvcApplicationPartsAssemblyInfo.cache
