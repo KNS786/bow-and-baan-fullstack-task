@@ -5,13 +5,13 @@ function App() {
 
   return (
 
-    <div className="d-flex w-full justify-center align-items-center h-[900px]">
-      <div className='d-flex  flex-col shadow-lg rounded align-items-center  p-4'>
+    <div className="d-flex w-full justify-content-center align-items-center h-[900px]">
+      <div className='d-flex  flex-column shadow-lg rounded align-items-center  p-4'>
         <div className='py-4 fs-2'>Create an account</div>
-        <Register/>
+        <Register />
       </div>
     </div>
-  
+
   )
 }
 

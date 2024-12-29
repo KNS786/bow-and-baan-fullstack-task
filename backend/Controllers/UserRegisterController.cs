@@ -73,63 +73,75 @@ public class UserRegisterController: ControllerBase
     public IActionResult RegisterUser([FromBody] UserRegister user){
 
         if(user == null){
-            return BadRequest("Invalid  user data.");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Invalid user data." });
         }
 
         if(_context.user.Any(u => u.Email == user.Email))
         {
-            return BadRequest("Email Already Exists");
+            return StatusCode(StatusCodes.Status409Conflict, new { message = "Email already exists." });
         }
 
 
         // validate user first name
         if(isEmpty(user.FirstName)){
-            return BadRequest("First name is required");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "First name is required." });
         }
 
         // min length 5 to max length 50 chars allowed
         if(isNotValidLength(user.FirstName)){
-            return BadRequest("First name must be between 5 and 50 characters.");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "First name must be between 5 and 50 characters." });
         }
 
         //validate last name
         if(isEmpty(user.LastName)){
-            return BadRequest("Last name is required");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Last name is required." });
         }
 
         if(isNotValidLength(user.LastName)){
-            return BadRequest("Last name must be between 5 and 50 characters.");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Last name must be between 5 and 50 characters." });
         }
 
         //email
         if(!isValidEmail(user.Email)){
-            return BadRequest("Invalid Email address");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Invalid email address." });
         }
 
         //password must be minium 8 chars
         if(string.IsNullOrWhiteSpace(user.Password) || user.Password.Trim().Length < 8){
-            return BadRequest("Password must be at least 8 characters long");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Password must be at least 8 characters long." });
         }
 
         //date
         if(!IsValidDate(user.DOB.ToString("yyyy-MM-dd"))){
-            return BadRequest("Invalid Date. Date should be yyyy-MM-dd.");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "Invalid date format. Date should be yyyy-MM-dd." });
         }
 
         //validate user must be greater than 18 
         
         if(isMinor(user.DOB.ToString("yyyy-MM-dd"))){
-            return BadRequest("Invalid Date Of Birth. allowed 18+");
+            return StatusCode(StatusCodes.Status400BadRequest, new { message = "User must be at least 18 years old." });
         }
 
         //for unique user id
         Random rnd = new Random();
         user.Id = rnd.Next(100,100000);
 
-        _context.user.Add(user);
+        try{
+                    _context.user.Add(user);
         _context.SaveChanges();
 
-        return Ok("User registered successfully");
+        return StatusCode(StatusCodes.Status201Created, new {
+            message = "User has been successfully registered.",
+            userId = user.Id
+        });
+        }catch(Exception ex){
+            Console.WriteLine(ex);
+            return StatusCode(StatusCodes.Status500InternalServerError, new {
+                message = "An error occurred while processing your request."
+            });
+        }
+
+
     }
 
     [HttpGet("GetUsers")]

@@ -1,3 +1,11 @@
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.csproj.AssemblyReference.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.AssemblyInfo.cs
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.csproj.CoreCompileInputs.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cs
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.sourcelink.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/appsettings.Development.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/appsettings.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/backend
@@ -16,14 +24,6 @@
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.csproj.AssemblyReference.cache
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.GeneratedMSBuildEditorConfig.editorconfig
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.AssemblyInfo.cs
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.csproj.CoreCompileInputs.cache
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cs
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cache
-/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.sourcelink.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets.build.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets.development.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets/msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props
