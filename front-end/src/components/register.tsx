@@ -25,16 +25,20 @@ const Register = () => {
             password: password ?? "",
             dob: dob ?? "",
           };
-          
+        
+        if(!isError){
+            dispatch(registerUser(formDetails)).then((response:any) => {
+                if (registerUser.fulfilled.match(response)) {
+                    console.log("Registration Successful:", response);
+                    setRegistered(true)
+                  } else if (registerUser.rejected.match(response)) {
+                    console.error("Registration Failed:", response.error.message);
+                  }
+            })
+            return ;
+        }
 
-        dispatch(registerUser(formDetails)).then((response:any) => {
-            if (registerUser.fulfilled.match(response)) {
-                console.log("Registration Successful:", response.payload);
-                setRegistered(true)
-              } else if (registerUser.rejected.match(response)) {
-                console.error("Registration Failed:", response.error.message);
-              }
-        })
+       
     }
     
     return (

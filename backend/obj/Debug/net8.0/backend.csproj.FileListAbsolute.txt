@@ -23,6 +23,7 @@
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.csproj.CoreCompileInputs.cache
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cs
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.MvcApplicationPartsAssemblyInfo.cache
+/home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/backend.sourcelink.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets.build.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets.development.json
 /home/navani/Desktop/bow-and-baan-fullstack-task/backend/obj/Debug/net8.0/staticwebassets/msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props

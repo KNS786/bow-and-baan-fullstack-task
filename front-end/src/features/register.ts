@@ -13,7 +13,8 @@ interface FormDetails {
 export const registerUser = createAsyncThunk(
   "user/registerUser",
   async(formDetails: any) => {
-    const request = await axios.post(`http://localhost:3000/api/register`, formDetails);
+    console.log("formDetails:::", formDetails);
+    const request = await axios.post(`http://localhost:5261/UserRegister/register`, formDetails);
     const response = await request.data;
     return response;
   }
